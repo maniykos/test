@@ -1,0 +1,64 @@
+body {
+    background-color: #333;
+}
+
+.container {
+    background-color: #ccc;
+    /*width: 600px;*/
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+h1 {
+    margin: 5px 0;
+}
+
+.f-ruletka div {
+    margin-top: 10px;
+    display: flex;
+}
+
+.f-ruletka .flex-bl label {
+    width: 200px;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.f-ruletka .flex-bl input {
+    line-height: 40px;
+    width: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.f-ruletka .submit-bl {
+    height: 40px;
+}
+
+.f-ruletka .submit-bl input {
+    padding: 5px 10px;
+    font-size: 20px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.jpreloader {
+    background-color: #111214;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+    z-index: 90000;
+    background-image: url("images/preloader.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+}

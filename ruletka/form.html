@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Рулетка</title>
+</head>
+<body>
+<div class="container">
+    <h1>Рулетка</h1>
+    <hr/>
+    <form class="f-ruletka" method="POST" id="formx" action="javascript:void(null);" onsubmit="call()">
+        <div class="flex-bl">
+            <label for="chipCount">Количество фишек:</label>
+            <input id="chipCount" name="chipCount" value="" type="number">
+        </div>
+        <div class="flex-bl">
+            <label for="fieldsCount">Kоличество ячеек:</label>
+            <input id="fieldsCount" name="fieldsCount" value="" type="number">
+        </div>
+        <div class="submit-bl">
+            <input class="" value="Создать" type="submit">
+        </div>
+    </form>
+    <hr/>
+
+    <div>Результат: <span class="result">нет данных</span></div>
+</div>
+</body>
+</html>
