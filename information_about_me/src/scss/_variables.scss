@@ -1,0 +1,25 @@
+// stylelint-disable scss/dollar-variable-empty-line-before
+
+// COLORS
+
+$color-black: #000;
+$color-white: #fff;
+$font-family-roboto-medium: "Roboto-Medium", sans-serif;
+$font-family-roboto: "Roboto", sans-serif;
+$body-font-family: $font-family-roboto-medium;
+
+$body-background: #f0f0f0;
+$global-width: 660px;
+$grid-column-count: 8;
+$grid-columns: 8;
+$global-padding: 34rem;
+
+$grid-margin-gutters: (
+        small: 20px,
+        medium: 30px,
+        large: 0
+);
+
+// FONTS
+
+

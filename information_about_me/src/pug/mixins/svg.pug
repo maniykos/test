@@ -1,0 +1,12 @@
+mixin svg(name)
+    svg&attributes(attributes)
+        use(xlink:href="/images/sprites.svg#" + name)
+
+
+mixin checkboxSquared(...items)
+    each item, index in items
+        div.small-4.medium-4.large-2.checkbox-squared-four
+            input(id="checkboxSq" + index, type="checkbox")
+            label(for="checkboxSq" + index)
+                span.checkbox-squared
+                span= item
