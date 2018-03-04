@@ -22,7 +22,7 @@ class ruletka
             $fieldsCount = intval($_POST['fieldsCount']) ? intval($_POST['fieldsCount']) : 0;
 
             if ($chipCount < $fieldsCount) {
-                $this->arr_Variants = array_unique($this->getArr_variants($chipCount, $fieldsCount));
+                $this->arr_Variants = array_unique($this->getArrVariants($chipCount, $fieldsCount));
                 //Запись в файл
                 try {
                     $filename = 'result_version.txt';
@@ -70,7 +70,7 @@ class ruletka
      *
      * @return array
      */
-    function getArr_variants($chipCount = 2, $fieldsCount = 4, $oldString = array())
+    function getArrVariants($chipCount = 2, $fieldsCount = 4, $oldString = array())
     {
         static $R = array();
         $position = 0;
@@ -94,7 +94,7 @@ class ruletka
             if ($arrString[$position] != 1) {
                 $arrString[$position] = 1;
                 $arrR = $arrString;
-                $this->getArr_variants($chipCount - 1, $fieldsCount, $arrString);
+                $this->getArrVariants($chipCount - 1, $fieldsCount, $arrString);
             }
 
         }
