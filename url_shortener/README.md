@@ -1,3 +1,20 @@
+# Задание
+    
+    1. Application should have form with field where user can put valid url (validation should be done by direct call of the provided url and check HTTP response code).
+    
+    2. Application should generate short url. Example: http://domaincom/cedwdsfl
+    
+    3. It should be possible to enter desired short url (another field).
+    
+    4. Application should validate if requested short url is not in use yet.
+    
+    5. Application should store original and short url pair in DB. User than can share short url with other users and once they try to access short url they should be redirected to
+    
+    original url.
+
+
+
+
 Yii 2 Advanced Project Template
 ===============================
 
